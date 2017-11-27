@@ -24,7 +24,7 @@ public class TransferTransaction {
   private final String accountToId;
 
   @NotNull
-  @Min(value = 0, message = "The amount value must be positive.")
+  @Min(value = 1, message = "The amount value must be positive.")
   private BigDecimal amount;
   
   @JsonCreator
